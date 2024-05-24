@@ -23,16 +23,24 @@ Find the architecture [here](./docs/architecture.md)
 
 Convert Speech Markdown to SSML for Amazon Alexa
 
-```js
-const smd = require('speechmarkdown-js');
+```python
+from speechmarkdown import SpeechMarkdown
 
-const markdown = `Sample [3s] speech [250ms] markdown`;
-const options = {
-  platform: 'amazon-alexa',
-};
+# Speech Markdown text
+markdown = "Sample [3s] speech [250ms] markdown"
 
-const speech = new smd.SpeechMarkdown();
-const ssml = speech.toSSML(markdown, options);
+# Configuration options, akin to the TypeScript example
+options = {
+    "platform": "amazon-alexa"
+}
+
+# Create a SpeechMarkdown instance
+speech = SpeechMarkdown(options)
+
+# Convert the Speech Markdown to SSML
+ssml = speech.to_ssml(markdown)
+
+print(ssml)
 ```
 
 The resulting SSML is:
