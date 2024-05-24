@@ -2,7 +2,7 @@
 [![Node.js version][nodejs-badge]][nodejs]
 [![MIT][license-badge]][license]
 
-# speechmarkdown-js
+# speechmarkdown-py. warning! work in progress! 
 
 Speech Markdown grammar, parser, and formatters for use with JavaScript.
 
